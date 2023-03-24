@@ -30,7 +30,7 @@ answer.extend(
             input_message_content=InputTextMessageContent("/end"),
         ),
         InlineQueryResultArticle(
-            title="🥴 𝑺𝒉𝒖𝒇𝒇𝒍𝒆 🥴",
+            title="𝑺𝒉𝒖𝒇𝒇𝒍𝒆",
             description="𝑺𝒉𝒖𝒇𝒇𝒍𝒆 𝑻𝒉𝒆 𝑸𝒖𝒆𝒖𝒆𝒅 𝑺𝒐𝒏𝒈 𝑰𝒏 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
             thumb_url="https://images.hindustantimes.com/tech/rf/image_size_960x540/HT/p2/2019/11/28/Pictures/_467b713e-11d7-11ea-b3fe-5324eb805ee9.jpg",
             input_message_content=InputTextMessageContent("/shuffle"),
