@@ -61,11 +61,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🇮🇳 ᴩʟᴀʏʟɪsᴛ ➕",
+                text="𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="💫 sᴜᴩᴩᴏʀᴛ 💫", url=f"https://t.me/Lover_Music_Support")
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
         ],
         [
             InlineKeyboardButton(
@@ -118,11 +118,19 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▧", callback_data=f"ADMIN Stop|{chat_id}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
         ],
         [
             InlineKeyboardButton(
@@ -147,7 +155,7 @@ def stream_markup(_, videoid, chat_id):
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▧", callback_data=f"ADMIN Stop|{chat_id}"
@@ -155,11 +163,11 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🇮🇳 ᴩʟᴀʏʟɪsᴛ ➕",
+                text="𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="💫 sᴜᴩᴩᴏʀᴛ 💫", url=f"https://t.me/Lover_Music_Support")
+                text="𝑾𝒚𝒏𝒌", url=f"https://t.me/Lover_Music_Support")
         ],
         [
             InlineKeyboardButton(
