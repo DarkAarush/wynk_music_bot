@@ -18,9 +18,6 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="𝑾𝒚𝒏𝒌 𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔 ⚙",
                 callback_data="settings_back_helper",
             ),
-            InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
-            ),
         ],
      ]
     return buttons
@@ -40,7 +37,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
             InlineKeyboardButton(
                 text="𝑾𝒚𝒏𝒌",
-                url=f"",
+                url=f"https://wynk.in/music",
             )
         ],
      ]
