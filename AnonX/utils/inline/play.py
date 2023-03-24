@@ -61,10 +61,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
                 text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
         ],
         [
@@ -163,7 +159,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝑾𝒚𝒏𝒌", url=f"")
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
         ],
         [
             InlineKeyboardButton(
@@ -192,6 +188,10 @@ def telegram_markup(_, chat_id):
             ),
         ],
         [
+            InlineKeyboardButton(
+                text="𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
+                callback_data=f"add_playlist {videoid}",
+            ),
             InlineKeyboardButton(
                 text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
         ],
