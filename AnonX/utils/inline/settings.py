@@ -24,7 +24,7 @@ def setting_markup(_):
         ],
         [
             InlineKeyboardButton(
-                text="𝑾𝒚𝒏𝒌 ⚙", url=f"{SUPPORT_GROUP}",
+                text="𝑾𝒚𝒏𝒌 𝑺𝒕𝒖𝒅𝒊𝒐", url=f"https://studio.wynk.in/",
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
