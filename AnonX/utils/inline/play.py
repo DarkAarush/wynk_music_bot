@@ -64,6 +64,19 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="𝑪𝒍𝒐𝒔𝒆", callback_data=f"close"
             )
         ],
+        [
+            InlineKeyboardButton(
+                text="🇮🇳 ᴩʟᴀʏʟɪsᴛ ➕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="💫 sᴜᴩᴩᴏʀᴛ 💫", url=f"https://t.me/Lover_Music_Support")
+        ],
+        [
+            InlineKeyboardButton(
+                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+            )
+        ],
     ]
     return buttons
 
