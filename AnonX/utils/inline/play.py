@@ -181,6 +181,14 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
+                text="🇮🇳 ᴩʟᴀʏʟɪsᴛ ➕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="💫 sᴜᴩᴩᴏʀᴛ 💫", url=f"https://t.me/Lover_Music_Support")
+        ],
+        [
+            InlineKeyboardButton(
                 text="𝑪𝒍𝒐𝒔𝒆", callback_data=f"close"
             )
         ],
@@ -333,6 +341,14 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="▧", callback_data=f"ADMIN Stop|{chat_id}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🇮🇳 ᴩʟᴀʏʟɪsᴛ ➕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="💫 sᴜᴩᴩᴏʀᴛ 💫", url=f"https://t.me/Lover_Music_Support")
         ],
         [
             InlineKeyboardButton(
