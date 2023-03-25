@@ -24,7 +24,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER("AnonX").error(
-            "WTF Baby ! Atleast add a pyrogram string, How Cheap..."
+            "𝑾𝑻𝑭 𝑾𝒚𝒏𝒌  𝑨𝒕𝒍𝒆𝒂𝒔𝒕 𝒂𝒅𝒅 𝒂 𝒑𝒚𝒓𝒐𝒈𝒓𝒂𝒎 𝒔𝒕𝒓𝒊𝒏𝒈, 𝑯𝒐𝒘 𝑪𝒉𝒆𝒂𝒑."
         )
         return
     if (
@@ -32,7 +32,7 @@ async def init():
         and not config.SPOTIFY_CLIENT_SECRET
     ):
         LOGGER("AnonX").warning(
-            "Sur spotify id aur secret toh daala hi nahi aapne ab toh spotify se nahi chala paaoge gaane."
+            "𝑷𝒍𝒆𝒂𝒄𝒆 𝑬𝒏𝒕𝒆𝒓 𝑺𝒑𝒐𝒕𝒊𝒇𝒚 𝑰𝑫 ..."
         )
     try:
         users = await get_gbanned()
@@ -73,4 +73,4 @@ async def init():
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("AnonX").info("Stopping Music Bot...")
+    LOGGER("AnonX").info("𝑺𝒕𝒐𝒑 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄...")
