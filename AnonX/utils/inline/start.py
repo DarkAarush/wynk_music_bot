@@ -33,7 +33,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="𝑾𝒚𝒏𝒌 𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔 ⚙", callback_data="settings_back_helper"
+                text="𝑾𝒚𝒏𝒌 𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔 ⚙",callback_data="settings_back_helper", 
             )
             InlineKeyboardButton(
                 text="𝑾𝒚𝒏𝒌",
