@@ -1,4 +1,5 @@
 import random
+from turtle import *
 import string
 from ast import ExceptHandler
 
@@ -49,7 +50,19 @@ async def play_commnd(
     fplay,
 ):
     mystic = await message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
+        if channel:
+            _["play_2"].format(channel)  
+        else:
+            color('red', 'yellow')
+            begin_fill()
+            while True:
+                speed(500)
+                forward(100)
+                left(170)
+                if abs(pos()) < 1:
+                    break
+            end_fill()
+            done()
     )
     plist_id = None
     slider = None
