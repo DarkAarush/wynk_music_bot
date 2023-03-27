@@ -52,7 +52,7 @@ async def start_comm(client, message: Message, _):
             return await message.reply_text(_["song_2"])
         if name[0:3] == "sta":
             m = await message.reply_text(
-                f"𝑮𝒆𝒕𝒕𝒊𝒏𝒈 𝒀𝒐𝒖𝒓 𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒍 𝑺𝒕𝒂𝒓𝒔 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 {config.MUSIC_BOT_NAME} "
+                f"🥱 ɢᴇᴛᴛɪɴɢ ʏᴏᴜʀ ᴩᴇʀsᴏɴᴀʟ sᴛᴀᴛs ғʀᴏᴍ {config.MUSIC_BOT_NAME} sᴇʀᴠᴇʀ."
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
@@ -112,7 +112,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} 𝑱𝒖𝒔𝒕 𝑺𝒕𝒂𝒓𝒕𝒆𝒅 𝑻𝒉𝒆 𝑪𝒉𝒆𝒄𝒌 <code>sᴜᴅᴏʟɪsᴛ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
+                    f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <code>sᴜᴅᴏʟɪsᴛ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
@@ -128,13 +128,13 @@ async def start_comm(client, message: Message, _):
         if name[0:3] == "del":
             await del_plist_msg(client=client, message=message, _=_)
         if name == "verify":
-            await message.reply_text(f"ʜᴇʏ {message.from_user.first_name},\n𝑻𝒉𝒂𝒏𝒌𝒔 𝑭𝒐𝒓 𝑽𝒆𝒓𝒊𝒇𝒚 𝑯𝒊𝒎𝒔𝒆𝒍𝒇 𝑰𝒏 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 {config.MUSIC_BOT_NAME},𝑵𝒐𝒘 𝒀𝒐𝒖 𝑪𝒂𝒏 𝑮𝒐 𝑩𝒂𝒄𝒌 𝑨𝒏𝒅 𝑼𝒔𝒆 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 .")
+            await message.reply_text(f"ʜᴇʏ {message.from_user.first_name},\nᴛʜᴀɴᴋs ғᴏʀ ᴠᴇʀɪғʏɪɴɢ ʏᴏᴜʀsᴇʟғ ɪɴ {config.MUSIC_BOT_NAME}, ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴜsɪɴɢ ᴍᴇ.")
             if await is_on_off(config.LOG):
                 sender_id = message.from_user.id
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} 𝑱𝒖𝒔𝒕 𝑺𝒕𝒂𝒓𝒕𝒆𝒅 𝑻𝒉𝒆 <code>𝒗𝒆𝒓𝒊𝒇𝒚 𝑯𝒊𝒎𝒔𝒆𝒍𝒇</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
+                    f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ <code>ᴠᴇʀɪғʏ ʜɪᴍsᴇʟғ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
                 )
             return
         if name[0:3] == "inf":
@@ -257,19 +257,7 @@ async def welcome(client, message: Message):
     if config.PRIVATE_BOT_MODE == str(True):
         if not await is_served_private_chat(message.chat.id):
             await message.reply_text(
-                """𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄
-
-                𝑨 𝑩𝒊𝒈 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆 𝑨𝒏𝒅 𝑽𝒆𝒓𝒚 𝒉𝒊𝒈𝒉 𝑸𝒖𝒂𝒍𝒊𝒕𝒚 
-                𝑽𝒐𝒊𝒄𝒆 𝑪𝒉𝒂𝒕 𝑩𝒐𝒕 𝑷𝒓𝒐𝒗𝒊𝒅𝒆 𝑩𝒚 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄.. 
-                
-                𝐖𝗒𐓣𝗄  𝐌υ𝗌𝗂𝖼 🎶... 
-
-                  01:43 ━━━━⚪───── 03:50
-
-                    ⇆ㅤ◁ㅤ ❚❚ ㅤ▷ ↻﻿  ☆
-                𝐕ⱺᥣυꭑ𝖾: ■■■■■□□□
-                """
-
+                "**ᴩʀɪᴠᴀᴛᴇ ᴍᴜsɪᴄ ʙᴏᴛ**\n\nᴏɴʟʏ ғᴏʀ ᴛʜᴇ ᴄʜᴀᴛs ᴀᴜᴛʜᴏʀɪsᴇᴅ ʙʏ ᴍʏ ᴏᴡɴᴇʀ, ʀᴇǫᴜᴇsᴛ ɪɴ ᴍʏ ᴏᴡɴᴇʀ's ᴩᴍ ᴛᴏ ᴀᴜᴛʜᴏʀɪsᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴡᴀɴᴛ ᴛᴏ ᴅᴏ sᴏ ᴛʜᴇɴ ғᴜ*ᴋ ᴏғғ ʙᴇᴄᴀᴜsᴇ ɪ'ᴍ ʟᴇᴀᴠɪɴɢ."
             )
             return await app.leave_chat(message.chat.id)
     else:
