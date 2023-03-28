@@ -344,7 +344,7 @@ def queue_markup(_, videoid, chat_id):
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="", callback_data=f"ADMIN Skip|{chat_id}"
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▧", callback_data=f"ADMIN Stop|{chat_id}"
