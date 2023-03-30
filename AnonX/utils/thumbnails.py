@@ -266,9 +266,9 @@ async def gen_qthumb(videoid, user_id):
             draw.text(
                 (455, 25),
                 "Wynk Add to Queue",
-                fill="red",
-                stroke_width=5,
-                stroke_fill="white",
+                fill="white",
+                stroke_width=2,
+                stroke_fill="red",
                 font=font,
             )
             if para[0]:
@@ -277,8 +277,8 @@ async def gen_qthumb(videoid, user_id):
                     ((1280 - text_w) / 2, 530),
                     f"{para[0]}",
                     fill="white",
-                    stroke_width=1,
-                    stroke_fill="white",
+                    stroke_width=2,
+                    stroke_fill="red",
                     font=font,
                 )
             if para[1]:
@@ -288,7 +288,7 @@ async def gen_qthumb(videoid, user_id):
                     f"{para[1]}",
                     fill="white",
                     stroke_width=1,
-                    stroke_fill="white",
+                    stroke_fill="red",
                     font=font,
                 )
         except:
