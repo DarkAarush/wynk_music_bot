@@ -85,7 +85,7 @@ async def gen_thumb(videoid, user_id):
         bg = Image.open(f"AnonX/assets/anonx.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(10))
+        background = image2.filter(filter=ImageFilter.BoxBlur(6))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
 
@@ -125,9 +125,9 @@ async def gen_thumb(videoid, user_id):
         try:
             draw.text(
                 (450, 25),
-                f"Wynk Music",
+                f"  Wynk Music",
                 fill="white",
-                stroke_width=6,
+                stroke_width=3,
                 stroke_fill="red",
                 font=font,
             )
@@ -157,7 +157,7 @@ async def gen_thumb(videoid, user_id):
         draw.text(
             ((1280 - text_w) / 2, 660),
             f"Wynk Duration: {duration} Mins",
-            fill="white",
+            fill="red",
             font=arial,
         )
         try:
