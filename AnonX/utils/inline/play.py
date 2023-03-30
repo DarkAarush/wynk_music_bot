@@ -14,30 +14,140 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 10:
-        bar = "⚪─────────"
+        ba = "⚪─────────"
     elif 10 < anon < 20:
-        bar = "━⚪────────"
+        ba = "━⚪────────"
     elif 20 <= anon < 30:
-        bar = "━━⚪───────"
+        ba = "━━⚪───────"
     elif 30 <= anon < 40:
-        bar = "━━━⚪──────"
+        ba = "━━━⚪──────"
     elif 40 <= anon < 50:
-        bar = "━━━━⚪─────"
+        ba = "━━━━⚪─────"
     elif 50 <= anon < 60:
-        bar = "━━━━━⚪────"
+        ba = "━━━━━⚪────"
     elif 60 <= anon < 70:
-        bar = "━━━━━━⚪───"
+        ba = "━━━━━━⚪───"
     elif 70 <= anon < 80:
-        bar = "━━━━━━━⚪──"
+        ba = "━━━━━━━⚪──"
     elif 80 <= anon < 95:
-        bar = "━━━━━━━━⚪─"
+        ba = "━━━━━━━━⚪─"
     else:
-        bar = "━━━━━━━━━⚪"
+        ba = "━━━━━━━━━⚪"
+
+#bar of wynk---------------------------------------
+    if 0 < anon <= 2:
+        bar = "𝒄          "
+    elif 2 < anon < 4:
+        bar = "𝒊𝒄         "
+    elif 4 <= anon < 6:
+        bar = "𝒔𝒊𝒄        "
+    elif 6 <= anon < 8:
+        bar = "𝒖𝒔𝒊𝒄       "
+    elif 8 <= anon < 10:
+        bar = "𝑴𝒖𝒔𝒊𝒄     "
+    elif 10 <= anon < 12:
+        bar = " 𝑴𝒖𝒔𝒊𝒄    "
+    elif 12 <= anon < 14:
+        bar = "𝒌 𝑴𝒖𝒔𝒊𝒄   "
+    elif 14 <= anon < 16:
+        bar = "𝒏𝒌 𝑴𝒖𝒔𝒊𝒄  "
+    elif 16 <= anon < 18:
+        bar = "𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 "
+    elif 18 <= anon < 20:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 20 <= anon < 22:
+        bar = " 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊"
+    elif 22 <= anon < 24:
+        bar = "  𝑾𝒚𝒏𝒌 𝑴𝒖𝒔"
+    elif 24 <= anon < 26:
+        bar = "   𝑾𝒚𝒏𝒌 𝑴𝒖"
+    elif 26 <= anon < 28:
+        bar = "    𝑾𝒚𝒏𝒌 𝑴"
+    elif 28 <= anon < 30:
+        bar = "     𝑾𝒚𝒏𝒌 "
+    elif 30 <= anon < 32:
+        bar = "      𝑾𝒚𝒏𝒌"
+    elif 32 <= anon < 34:
+        bar = "       𝑾𝒚𝒏"
+    elif 34 <= anon < 36:
+        bar = "        𝑾𝒚"
+    elif 36 <= anon < 38:
+        bar = "         𝑾"
+    elif 38 <= anon < 40:
+        bar = "𝒄          "
+    elif 40 <= anon < 42:
+        bar = "𝒊𝒄         "
+    elif 42 <= anon < 44:
+        bar = "𝒔𝒊𝒄        "
+    elif 44 <= anon < 46:
+        bar = "𝒖𝒔𝒊𝒄       "
+    elif 46 <= anon < 48:
+        bar = "𝑴𝒖𝒔𝒊𝒄     "
+    elif 48 <= anon < 50:
+        bar = " 𝑴𝒖𝒔𝒊𝒄    "
+    elif 50 <= anon < 52:
+        bar = "𝒌 𝑴𝒖𝒔𝒊𝒄   "
+    elif 52 <= anon < 54:
+        bar = "𝒏𝒌 𝑴𝒖𝒔𝒊𝒄  "
+    elif 54 <= anon < 56:
+        bar = "𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 "
+    elif 56 <= anon < 58:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 58 <= anon < 60:
+        bar = " 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊"
+    elif 60 <= anon < 62:
+        bar = "  𝑾𝒚𝒏𝒌 𝑴𝒖𝒔"
+    elif 62 <= anon < 64:
+        bar = "   𝑾𝒚𝒏𝒌 𝑴𝒖"
+    elif 64 <= anon < 66:
+        bar = "    𝑾𝒚𝒏𝒌 𝑴"
+    elif 66 <= anon < 68:
+        bar = "     𝑾𝒚𝒏𝒌 "
+    elif 68 <= anon < 70:
+        bar = "      𝑾𝒚𝒏𝒌"
+    elif 70 <= anon < 72:
+        bar = "       𝑾𝒚𝒏"
+    elif 72 <= anon < 74:
+        bar = "        𝑾𝒚"
+    elif 74 <= anon < 76:
+        bar = "         𝑾"
+    elif 76 <= anon < 78:
+        bar = "𝒄          "
+    elif 78 <= anon < 80:
+        bar = "𝒊𝒄         "
+    elif 80 <= anon < 82:
+        bar = "𝒔𝒊𝒄        "
+    elif 82 <= anon < 84:
+        bar = "𝒖𝒔𝒊𝒄       "
+    elif 84 <= anon < 86:
+        bar = "𝑴𝒖𝒔𝒊𝒄     "
+    elif 86 <= anon < 88:
+        bar = " 𝑴𝒖𝒔𝒊𝒄    "
+    elif 88 <= anon < 90:
+        bar = "𝒌 𝑴𝒖𝒔𝒊𝒄   "
+    elif 90 <= anon < 92:
+        bar = "𝒏𝒌 𝑴𝒖𝒔𝒊𝒄  "
+    elif 92 <= anon < 94:
+        bar = "𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 "
+    elif 94 <= anon < 96:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 96 <= anon < 98:
+        bar = "𝐖𝗒𐓣𝗄 𝐌υ𝗌𝗂𝖼"
+    elif 98 <= anon < 99:
+        bar = "⇆  ឵឵◃ ❚❚ ▹ ឵឵↻"
+    else:
+        bar = "𝐖𝐲𝐧𝐤 𝐒𝐭𝐮𝐢𝐝𝐨"
 
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{bar}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} {ba} {dur}",
                 callback_data="GetTimer",
             )
         ],
@@ -80,28 +190,138 @@ def telegram_markup_timer(_, chat_id, played, dur):
     if 0 < anon <= 10:
         bar = "⚪─────────"
     elif 10 < anon < 20:
-        bar = "━⚪────────"
+        ba = "━⚪────────"
     elif 20 <= anon < 30:
-        bar = "━━⚪───────"
+        ba = "━━⚪───────"
     elif 30 <= anon < 40:
-        bar = "━━━⚪──────"
+        ba = "━━━⚪──────"
     elif 40 <= anon < 50:
-        bar = "━━━━⚪─────"
+        ba = "━━━━⚪─────"
     elif 50 <= anon < 60:
-        bar = "━━━━━⚪────"
+        ba = "━━━━━⚪────"
     elif 60 <= anon < 70:
-        bar = "━━━━━━⚪───"
+        ba = "━━━━━━⚪───"
     elif 70 <= anon < 80:
-        bar = "━━━━━━━⚪──"
+        ba = "━━━━━━━⚪──"
     elif 80 <= anon < 95:
-        bar = "━━━━━━━━⚪─"
+        ba = "━━━━━━━━⚪─"
     else:
-        bar = "━━━━━━━━━⚪"
+        ba = "━━━━━━━━━⚪"
+
+# Wynk bar-----------------------------------------------------------
+    if 0 < anon <= 2:
+        bar = "𝒄          "
+    elif 2 < anon < 4:
+        bar = "𝒊𝒄         "
+    elif 4 <= anon < 6:
+        bar = "𝒔𝒊𝒄        "
+    elif 6 <= anon < 8:
+        bar = "𝒖𝒔𝒊𝒄       "
+    elif 8 <= anon < 10:
+        bar = "𝑴𝒖𝒔𝒊𝒄     "
+    elif 10 <= anon < 12:
+        bar = " 𝑴𝒖𝒔𝒊𝒄    "
+    elif 12 <= anon < 14:
+        bar = "𝒌 𝑴𝒖𝒔𝒊𝒄   "
+    elif 14 <= anon < 16:
+        bar = "𝒏𝒌 𝑴𝒖𝒔𝒊𝒄  "
+    elif 16 <= anon < 18:
+        bar = "𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 "
+    elif 18 <= anon < 20:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 20 <= anon < 22:
+        bar = " 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊"
+    elif 22 <= anon < 24:
+        bar = "  𝑾𝒚𝒏𝒌 𝑴𝒖𝒔"
+    elif 24 <= anon < 26:
+        bar = "   𝑾𝒚𝒏𝒌 𝑴𝒖"
+    elif 26 <= anon < 28:
+        bar = "    𝑾𝒚𝒏𝒌 𝑴"
+    elif 28 <= anon < 30:
+        bar = "     𝑾𝒚𝒏𝒌 "
+    elif 30 <= anon < 32:
+        bar = "      𝑾𝒚𝒏𝒌"
+    elif 32 <= anon < 34:
+        bar = "       𝑾𝒚𝒏"
+    elif 34 <= anon < 36:
+        bar = "        𝑾𝒚"
+    elif 36 <= anon < 38:
+        bar = "         𝑾"
+    elif 38 <= anon < 40:
+        bar = "𝒄          "
+    elif 40 <= anon < 42:
+        bar = "𝒊𝒄         "
+    elif 42 <= anon < 44:
+        bar = "𝒔𝒊𝒄        "
+    elif 44 <= anon < 46:
+        bar = "𝒖𝒔𝒊𝒄       "
+    elif 46 <= anon < 48:
+        bar = "𝑴𝒖𝒔𝒊𝒄     "
+    elif 48 <= anon < 50:
+        bar = " 𝑴𝒖𝒔𝒊𝒄    "
+    elif 50 <= anon < 52:
+        bar = "𝒌 𝑴𝒖𝒔𝒊𝒄   "
+    elif 52 <= anon < 54:
+        bar = "𝒏𝒌 𝑴𝒖𝒔𝒊𝒄  "
+    elif 54 <= anon < 56:
+        bar = "𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 "
+    elif 56 <= anon < 58:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 58 <= anon < 60:
+        bar = " 𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊"
+    elif 60 <= anon < 62:
+        bar = "  𝑾𝒚𝒏𝒌 𝑴𝒖𝒔"
+    elif 62 <= anon < 64:
+        bar = "   𝑾𝒚𝒏𝒌 𝑴𝒖"
+    elif 64 <= anon < 66:
+        bar = "    𝑾𝒚𝒏𝒌 𝑴"
+    elif 66 <= anon < 68:
+        bar = "     𝑾𝒚𝒏𝒌 "
+    elif 68 <= anon < 70:
+        bar = "      𝑾𝒚𝒏𝒌"
+    elif 70 <= anon < 72:
+        bar = "       𝑾𝒚𝒏"
+    elif 72 <= anon < 74:
+        bar = "        𝑾𝒚"
+    elif 74 <= anon < 76:
+        bar = "         𝑾"
+    elif 76 <= anon < 78:
+        bar = "𝒄          "
+    elif 78 <= anon < 80:
+        bar = "𝒊𝒄         "
+    elif 80 <= anon < 82:
+        bar = "𝒔𝒊𝒄        "
+    elif 82 <= anon < 84:
+        bar = "𝒖𝒔𝒊𝒄       "
+    elif 84 <= anon < 86:
+        bar = "𝑴𝒖𝒔𝒊𝒄     "
+    elif 86 <= anon < 88:
+        bar = " 𝑴𝒖𝒔𝒊𝒄    "
+    elif 88 <= anon < 90:
+        bar = "𝒌 𝑴𝒖𝒔𝒊𝒄   "
+    elif 90 <= anon < 92:
+        bar = "𝒏𝒌 𝑴𝒖𝒔𝒊𝒄  "
+    elif 92 <= anon < 94:
+        bar = "𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄 "
+    elif 94 <= anon < 96:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 96 <= anon < 98:
+        bar = "𝐖𝗒𐓣𝗄 𝐌υ𝗌𝗂𝖼"
+    elif 98 <= anon < 99:
+        bar = "⇆  ឵឵◃ ❚❚ ▹ ឵឵↻"
+    else:
+        bar = "𝐖𝐲𝐧𝐤 𝐒𝐭𝐮𝐢𝐝𝐨"
 
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{bar}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} {ba} {dur}",
                 callback_data="GetTimer",
             )
         ],
@@ -344,7 +564,7 @@ def queue_markup(_, videoid, chat_id):
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
+                text="", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▧", callback_data=f"ADMIN Stop|{chat_id}"
