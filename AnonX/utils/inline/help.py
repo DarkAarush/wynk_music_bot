@@ -104,7 +104,7 @@ def private_help_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="❄ ʜᴇʟᴩ ❄",
+                text="❄ 𝐇𝖾ᥣρ❄",
                 callback_data="settings_back_helper",
             ),
         ],
