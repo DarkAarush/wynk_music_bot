@@ -10,7 +10,7 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="𝑨𝒅𝒅 𝑾𝒚𝒏𝒌  𝑴𝒖𝒔𝒊𝒄 𝑰𝒏 𝑮𝒓𝒐𝒖𝒑 ",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/Wynk_Music_TetrisBot?startgroup=true",
             )
         ],
         [
@@ -31,7 +31,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="𝑨𝒅𝒅 𝑾𝒚𝒏𝒌  𝑴𝒖𝒔𝒊𝒄 𝑰𝒏 𝑮𝒓𝒐𝒖𝒑 ",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/Wynk_Music_TetrisBot?startgroup=true",
             )
         ],
         [
