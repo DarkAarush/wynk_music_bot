@@ -125,9 +125,9 @@ async def gen_thumb(videoid, user_id):
         try:
             draw.text(
                 (450, 25),
-                f"  Wynk Music",
+                f"Enjoy Wynk Music",
                 fill="white",
-                stroke_width=3,
+                stroke_width=2,
                 stroke_fill="red",
                 font=font,
             )
@@ -137,7 +137,7 @@ async def gen_thumb(videoid, user_id):
                     ((1280 - text_w) / 2, 530),
                     f"{para[0]}",
                     fill="white",
-                    stroke_width=3,
+                    stroke_width=2,
                     stroke_fill="red",
                     font=font,
                 )
@@ -147,7 +147,7 @@ async def gen_thumb(videoid, user_id):
                     ((1280 - text_w) / 2, 580),
                     f"{para[1]}",
                     fill="white",
-                    stroke_width=3,
+                    stroke_width=2,
                     stroke_fill="red",
                     font=font,
                 )
@@ -157,7 +157,7 @@ async def gen_thumb(videoid, user_id):
         draw.text(
             ((1280 - text_w) / 2, 660),
             f"Wynk Duration: {duration} Mins",
-            fill="red",
+            fill="white",
             font=arial,
         )
         try:
