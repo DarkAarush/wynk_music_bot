@@ -80,7 +80,7 @@ START_IMG_URL = getenv("START_IMG_URL", "https://images.hindustantimes.com/tech/
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://images.hindustantimes.com/tech/rf/image_size_960x540/HT/p2/2019/11/28/Pictures/_467b713e-11d7-11ea-b3fe-5324eb805ee9.jpg",
+    "https://www.medianews4u.com/wp-content/uploads/2019/05/Tips.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://apkdone.com/wp-content/uploads/2020/10/Wynk-Music-poster.jpg"
