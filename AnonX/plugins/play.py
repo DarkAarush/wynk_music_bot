@@ -1,7 +1,7 @@
 import random
 import string
 from ast import ExceptHandler
-
+from turtle import *
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto,
                             Message)
@@ -65,7 +65,20 @@ async def play_commnd(
         )
         return
     mystic = await message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
+        if channel:
+            _["play_2"].format(channel)
+        else:
+            color('red', 'yellow')
+            begin_fill()
+            while True:
+                speed(50)
+                forward(100)
+                left(170)
+                if abs(pos()) < 1:
+                    break
+            end_fill()
+            done()
+            
     )
     plist_id = None
     slider = None
